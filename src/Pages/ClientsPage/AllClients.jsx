@@ -1,6 +1,4 @@
 import Table from '../../components/Table/Table';
-import { useContext, useEffect, useState } from 'react';
-import { DataContext } from '../../context/Context';
 import useSearch from '../../Hooks/useSearch';
 import usePagination from '../../Hooks/usePagination';
 import useFetch from '../../Hooks/useFetch';

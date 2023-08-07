@@ -1,7 +1,6 @@
 import './History.scss';
 import HistoryTable from '../../components/Table/HistoryTable';
 import useSearch from '../../Hooks/useSearch';
-
 import usePagination from '../../Hooks/usePagination';
 import useFetch from '../../Hooks/useFetch';
 function History() {

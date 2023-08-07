@@ -10,7 +10,6 @@ import Parts from './Pages/Parts/Parts';
 import NewRepair from './Pages/newRepair/NewRepair';
 import Repair from './Pages/Repair/Repair';
 import DataProvider from './context/Context';
-import Table from './components/Table/Table';
 import AllClients from './Pages/ClientsPage/AllClients';
 import './styles/global.scss';
 

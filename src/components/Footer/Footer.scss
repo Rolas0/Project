@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    background-color: $main-bg;
+
+    span {
+        color: $soft-color;
+        &:first-child {
+            font-weight: bold;
+        }
+        &:last-child {
+            font-size: 15px;
+        }
+    }
+}

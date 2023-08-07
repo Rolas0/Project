@@ -1,0 +1,30 @@
+@import '../../styles/responsive.scss';
+
+.repair-div {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    gap: 10px;
+
+    .loading {
+        font-size: 50px;
+        color: black;
+    }
+
+    .error {
+        font-size: 50px;
+        color: red;
+    }
+
+    @include md {
+        display: flex;
+        height: auto;
+        overflow: auto;
+    }
+    @include xl {
+        display: flex;
+        height: auto;
+        overflow: auto;
+    }
+}

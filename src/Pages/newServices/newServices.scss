@@ -1,0 +1,58 @@
+@import '../../styles/variables.scss';
+
+$form-background: #343749;
+$form-text-color: #333;
+$form-primary-color: #007bff;
+$form-error-color: #ff0000;
+
+.form-container {
+    width: 400px;
+    gap: 5px;
+    margin: 20px auto;
+    background-color: $form-background;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        color: #cccccc;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        .input-div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            input {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+
+            select {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-position: right 10px top 50%;
+                background-size: 12px;
+
+                option {
+                    background-color: $main-bg;
+                    color: $main-color;
+                }
+            }
+
+            .error-message {
+                display: none;
+                color: $form-error-color;
+                font-size: 14px;
+                margin-top: 5px;
+            }
+        }
+    }
+}

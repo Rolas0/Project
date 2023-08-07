@@ -1,0 +1,110 @@
+@import '../../styles/variables.scss';
+@import '../../styles/responsive.scss';
+
+.table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+        color: $dark-color;
+    }
+}
+
+.table-container {
+    width: 100%;
+    display: flex;
+
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow-x: auto;
+    overflow-y: auto;
+    flex-direction: column;
+    height: 100%;
+
+    .loading {
+        color: rgb(17, 9, 9);
+        font-size: 50px;
+    }
+
+    .error {
+        color: red;
+        font-size: 50px;
+    }
+    .table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: auto;
+        height: 100%;
+    }
+
+    table {
+        border-collapse: collapse;
+        color: $dark-color;
+        width: 100%;
+
+        @include md {
+            width: 100%;
+            .hide {
+                display: none;
+            }
+        }
+
+        tr {
+            border-bottom: 1px solid $soft-color;
+        }
+
+        thead {
+            th {
+                font-size: 20px;
+                text-transform: uppercase;
+                font-weight: 400;
+                background-color: #eef2f7;
+                text-align: start;
+                color: $dark-color;
+                padding: 15px;
+            }
+        }
+
+        tbody {
+            .body-tr {
+                td {
+                    padding: 10px 15px;
+                }
+                .status {
+                    .td-p {
+                        background-color: #d7fada;
+                        padding: 2px 10px;
+                        display: inline-block;
+                        border-radius: 14px;
+                        color: #2b2b2b;
+                    }
+                }
+            }
+
+            .actions {
+                display: flex;
+                justify-content: space-between;
+
+                .complete-btn {
+                    text-decoration: none;
+                    font-size: 14px;
+                    color: #72f07c;
+                    font-weight: 600;
+                }
+                .info-btn {
+                    color: #fff;
+                    padding: 10px 15px;
+                    background-color: #236c85;
+                    border: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: darken(#236c85, 10%);
+                    }
+                }
+            }
+        }
+    }
+}

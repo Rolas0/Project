@@ -1,0 +1,63 @@
+@import '../../styles/variables.scss';
+@import '../../styles/responsive.scss'; // .main {
+
+.main {
+    height: 100vh;
+
+    @include md {
+        width: 100%;
+    }
+    @include xl {
+        width: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        background-color: $main-color;
+        color: $dark-color;
+
+        @include md {
+            width: 100%;
+            overflow: hidden;
+        }
+        @include lg {
+            width: 100%;
+            height: fit-content;
+        }
+    }
+
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+
+        @include xl {
+            width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+        @include lg {
+            width: 90%;
+            height: auto;
+        }
+        @include md {
+            width: 90%;
+            height: auto;
+        }
+        @include sm {
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            width: 94%;
+            overflow: hidden;
+            padding: 5px 20px;
+            height: 100%;
+            gap: 20px;
+            width: 100%;
+        }
+    }
+}

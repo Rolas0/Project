@@ -1,0 +1,21 @@
+$primary-color: #3498db;
+$font-color: #333;
+$border-color: #ccc;
+$input-background-color: #f1f1f1;
+
+.search-form {
+    input[type='search'] {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid $border-color;
+        border-radius: 4px;
+        background-color: $input-background-color;
+        color: $font-color;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+            box-shadow: 0 0 5px $primary-color;
+        }
+    }
+}

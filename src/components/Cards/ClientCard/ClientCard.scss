@@ -1,0 +1,72 @@
+@import '../../../styles/variables.scss';
+
+@import '../../../styles/responsive.scss';
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: $dark-color;
+}
+.client-repairs-div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+
+    gap: 5px;
+
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        color: $dark-color;
+    }
+
+    .repair-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 16px;
+        margin-bottom: 16px;
+        width: 300px;
+        background-color: rgb(255, 255, 255);
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 8px;
+            color: $main-bg;
+        }
+
+        h4 {
+            color: $main-bg;
+            font-size: 16px;
+        }
+        p {
+            color: $main-bg;
+            font-size: 16px;
+        }
+
+        .description {
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        div {
+            margin-top: 8px;
+            color: $main-bg;
+            ul {
+                margin-top: 8px;
+                list-style: none;
+                padding: 0;
+                li {
+                    color: $main-bg;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .cost {
+            margin-top: 8px;
+            font-weight: 600;
+        }
+    }
+}

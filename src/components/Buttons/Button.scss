@@ -1,0 +1,22 @@
+$form-background: #343749;
+$form-text-color: #333;
+$form-primary-color: #236c85;
+$form-error-color: #ff0000;
+
+.btn {
+    color: $form-primary-color;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #236c85;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: darken($form-primary-color, 10%);
+    }
+}

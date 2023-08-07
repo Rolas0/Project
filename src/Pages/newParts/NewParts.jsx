@@ -36,6 +36,7 @@ function NewParts() {
             if (response.ok) {
                 const newPart = await response.json();
                 dispatch({ type: 'ADDED_CLIENT', payload: newPart });
+
                 console.log('part added:', data);
             }
         } catch (error) {

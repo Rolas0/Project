@@ -4,9 +4,6 @@ import useSearch from '../../Hooks/useSearch';
 import usePagination from '../../Hooks/usePagination';
 import useFetch from '../../Hooks/useFetch';
 function History() {
-    // const { dataFetch } = useContext(DataContext);
-    // const { data, loading, error, dispatch } = dataFetch;
-
     const HISTORY_URL = `http://localhost:3001/data/history`;
 
     const { data, dispatch, loading, error } = useFetch(HISTORY_URL);
